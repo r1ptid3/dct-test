@@ -1,0 +1,118 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: dtc\n"
+"PO-Revision-Date: 2022-06-14 18:07+0000\n"
+"Last-Translator: \n"
+"Language-Team: dtc\n"
+"Language: dtc\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Loco https://localise.biz/\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-KeywordsList: __;esc_html_e;esc_html__;_e\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: assets/scss/node_modules\n"
+
+#: functions.php:107
+msgid "Add widgets here."
+msgstr ""
+
+#: footer.php:105
+#, php-format
+msgid "Copyright © %s Cloth-store. All Rights Reserved"
+msgstr ""
+
+#: footer.php:108
+msgid "Designed by Solwin Infotech"
+msgstr ""
+
+#: footer.php:36
+msgid "FOLLOW US"
+msgstr ""
+
+#: functions.php:47
+msgid "Footer Menu 1"
+msgstr ""
+
+#: functions.php:48
+msgid "Footer Menu 2"
+msgstr ""
+
+#: functions.php:49
+msgid "Footer Menu 3"
+msgstr ""
+
+#: 404.php:19
+msgid ""
+"It looks like nothing was found at this location. Maybe try one of the links "
+"below or a search?"
+msgstr ""
+
+#: template-parts/content-none.php:48
+msgid ""
+"It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps "
+"searching can help."
+msgstr ""
+
+#: index.php:25
+msgid "Learn More"
+msgstr ""
+
+#: front-page.php:173
+msgid "More"
+msgstr ""
+
+#: footer.php:52
+msgid "NEWSLETTER SIGNUP"
+msgstr ""
+
+#: template-parts/content-navigation.php:69
+msgid "Next Post"
+msgstr ""
+
+#: template-parts/content-none.php:18
+msgid "Nothing Found"
+msgstr ""
+
+#: inc/post-functions.php:326 template-parts/content-page.php:30
+msgid "Pages:"
+msgstr ""
+
+#: template-parts/content-navigation.php:49
+msgid "Previous Post"
+msgstr ""
+
+#: functions.php:46
+msgid "Primary"
+msgstr ""
+
+#: inc/post-functions.php:296
+msgid "Read More"
+msgstr ""
+
+#: template-parts/content-none.php:28
+#, php-format
+msgid ""
+"Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
+msgstr ""
+
+#: search.php:21
+#, php-format
+msgid "Showing search results for: %s"
+msgstr ""
+
+#: functions.php:105
+msgid "Sidebar"
+msgstr ""
+
+#: template-parts/content-none.php:41
+msgid ""
+"Sorry, but nothing matched your search terms. Please try again with some "
+"different keywords."
+msgstr ""
+
+#: inc/hooking-functions.php:49
+msgid "Wrong password or login"
+msgstr ""

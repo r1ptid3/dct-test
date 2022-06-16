@@ -1,0 +1,45 @@
+/* ----- Main Layout Styles ----- */
+body{
+	display: grid;
+	min-height: 100vh;
+    grid-template-columns: 100%;
+	grid-template-rows: auto 1fr auto;
+	&.admin-bar{
+		min-height: calc( 100vh - 32px );
+	}
+}
+section{
+	margin-top: 5rem;
+}
+.r1-main{
+	width: 100%;
+}
+.r1-container{
+    width: 80rem;
+    margin: 0 auto;
+    max-width: 100%;
+    padding: 0 1.25rem;
+}
+
+/* ----- Main Layout Media Queries ----- */
+@include mq($until: desktop) { // max-width: 1365px
+	.r1-container{
+    	width: 64rem;
+	}
+}
+@include mq($until: tabletLandscape) { // max-width: 1023px
+	.r1-container{
+    	width: 48rem;
+	}
+	section{
+		margin-top: 4rem;
+	}
+}
+@include mq($until: tabletPortrait) { // max-width: 767px
+	.r1-container{
+    	width: 100%;
+	}
+	section{
+		margin-top: 3rem;
+	}
+}

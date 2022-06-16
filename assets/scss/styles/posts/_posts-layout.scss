@@ -1,0 +1,38 @@
+/*---- Post Layout Styles ----*/
+.r1-section-posts{
+	&.grid{
+		margin: 0 -0.625rem -2.25rem;
+		@include flex(row, wrap, flex-start, stretch);
+		&.columns-2{
+			.r1-post{
+				width: calc( 50% - 1.25rem );
+			}
+		}
+		&.columns-3{
+			.r1-post{
+				width: calc( 33.3% - 1.25rem );	
+			}	
+		}
+		&.columns-4{
+			.r1-post{
+				width: calc( 25% - 1.25rem );
+			}
+		}
+		.r1-post{
+			margin: 0 0.625rem 1.25rem;
+		}
+		@include mq($until: tabletPortrait) {
+			margin: 0 0 -1.25rem;
+			&.columns-2,
+			&.columns-3,
+			&.columns-4{
+				.r1-post{
+					width: 100%;
+				}
+			}
+			.r1-post{
+				margin: 0 0 2.25rem;
+			}	
+		}
+	}
+}

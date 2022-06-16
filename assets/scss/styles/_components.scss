@@ -1,0 +1,163 @@
+/*----------------------
+------ Components ------
+----------------------*/
+
+/* ----- Preloader -----*/
+.r1-preloader{
+    position: fixed;
+    left: 0; right: 0;
+    top: 0; bottom: 0;
+    background-color: #fff;
+    @include transition(all .2s ease);
+    z-index: 999;
+    opacity: 1;
+    &.hidden{
+        opacity: 0;
+        pointer-events: none;
+    }
+}
+
+/* ----- WP Forms -----*/
+body{
+    div.wpforms-container-full{
+        .wpforms-form{
+            position: relative;
+            input{
+                &[type=date],
+                &[type=datetime],
+                &[type=datetime-local],
+                &[type=email],
+                &[type=month],
+                &[type=number],
+                &[type=password],
+                &[type=range],
+                &[type=search],
+                &[type=tel],
+                &[type=text],
+                &[type=time],
+                &[type=url],
+                &[type=week]{
+                    height: 3.125rem;
+                    font-weight: 300;
+                    border-radius: 0;
+                    font-size: 0.75rem;
+                    padding: 1rem 1.25rem;
+                }
+            }
+            .wpforms-submit-container{
+                top: 0;
+                right: 0;
+                height: 100%;
+                padding: 10px 0;
+                position: absolute;
+                .wpforms-submit{
+                    border: 0;
+                    color: #fff;
+                    height: 100%;
+                    font-size: 0.75rem;
+                    padding: 1rem 3.25rem;
+                    letter-spacing: 0.05em;
+                    background-color: $accent;
+                    @include transition(background-color .25s ease);
+                    &:hover{
+                        border: 0;
+                        background-color: rgb(125 73 171);
+                    }
+                }
+            }
+            label.wpforms-error{
+                position: absolute;
+                bottom: -1rem;
+            }
+        }
+    }
+}
+
+/* ----- Overlay -----*/
+.r1-overlay{
+	position: fixed;
+    left: 0; right: 0;
+    top: 0; bottom: 0;
+    @include transition(all .2s ease);
+    background-color: rgba(0,0,0, .85);
+    z-index: 10;
+    opacity: 0;
+    pointer-events: none;
+    &.active{
+    	opacity: 1;
+    	pointer-events: auto;
+    }
+}
+
+/* ----- Title Styles -----*/
+.r1-title-wrapper{
+	margin-bottom: 2rem;
+	.r1-title{
+        position: relative;
+		display: inline-block;
+        &:before{
+            content: '';
+            left: 0;
+            width: 31px;
+            height: 1.25rem;
+            margin-right: 1.25rem;
+            display: inline-block;
+            background: linear-gradient(to right, #1eb089 9px, transparent 9px, transparent 11px, #7db9e8 11px, #7db9e8 20px, transparent 20px, transparent 22px, #7c49ab 22px);
+        }
+	}
+    @include mq($until: tabletLandscape) {
+        margin-bottom: 1.5rem;
+        .r1-title{
+            &:before{
+                height: 1rem;
+            }
+        }
+    }
+    @include mq($until: tabletPortrait) {
+        .r1-title{
+            &:before{
+                height: 0.875rem;
+            }
+        }
+    }
+}
+
+/* ----- Button Up -----*/
+.r1-button-up{
+    position: fixed;
+    display: inline-block;
+    width: 3rem;
+    height: 3rem;
+    background-color: #fff;
+    border: 2px solid #000;
+    @include border-radius(50%);
+    @include inline-flex(center, center);
+    right: 2rem;
+    bottom: -6rem;
+    cursor: pointer;
+    @include transition(all .3s ease-in, background-color .2s ease);
+    z-index: 2;
+    &:hover{
+        @include transform(translateY(-0.5rem));
+    }
+    &.active{
+        bottom: 2rem;
+    }
+}
+@media screen and (max-width: 767px) {
+    .r1-button-up{
+        width: 40px;
+        height: 40px;
+        right: 15px;
+        img{
+            width: 14px;
+        }
+        &:before{
+            position: relative;
+            top: -2px;
+        }
+        &.active{
+            bottom: 15px;
+        }
+    }   
+}

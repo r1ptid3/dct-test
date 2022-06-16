@@ -1,0 +1,25 @@
+@import 'default/mq-predefined';
+@import '../node_modules/sass-mq/mq';
+
+// Default styles
+@import 'default/resete';
+@import 'default/fonts';
+@import 'default/colors';
+@import 'default/mixins';
+@import 'default/normalize';
+@import 'default/default';
+
+// Structure styles
+@import 'layout';
+@import 'components';
+
+// Additional styles
+@import 'sidebar/sidebar';
+
+// Main styles
+@import 'header';
+
+@import 'posts/posts';
+@import 'pages/homepage';
+
+@import 'footer';
